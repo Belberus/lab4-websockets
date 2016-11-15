@@ -64,7 +64,7 @@ public class ElizaServerTest {
 		// COMPLETE ME!!
 		latch.await();
 		// COMPLETE ME!!
-		asserEquals(6,list.size());
+		assertEquals(6,list.size());
 		// COMPLETE ME!!
 		assertEquals("Do you really think so?", list.get(0));
 	}
