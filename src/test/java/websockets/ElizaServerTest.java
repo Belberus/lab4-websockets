@@ -56,7 +56,7 @@ public class ElizaServerTest {
 	@Test(timeout = 1000)
 	public void onChat() throws DeploymentException, IOException, URISyntaxException, InterruptedException {
 		// COMPLETE ME!!
-		CountDownLatch latch = new CountDownLatch(6);
+		CountDownLatch latch = new CountDownLatch(3);
 		List<String> list = new ArrayList<>();
 		ClientEndpointConfig configuration = ClientEndpointConfig.Builder.create().build();
 		ClientManager client = ClientManager.createClient();
@@ -64,9 +64,9 @@ public class ElizaServerTest {
 		// COMPLETE ME!!
 		latch.await();
 		// COMPLETE ME!!
-		assertEquals(6,list.size());
+		assertEquals(3,list.size());
 		// COMPLETE ME!!
-		assertEquals("Do you really think so?", list.get(1));
+		assertEquals("Do you really think so?", list.get(0));
 	}
 
 	@After
