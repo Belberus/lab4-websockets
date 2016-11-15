@@ -66,7 +66,7 @@ public class ElizaServerTest {
 		// COMPLETE ME!!
 		assertEquals(3,list.size());
 		// COMPLETE ME!!
-		assertEquals("Do you really think so?", list.get(2));
+		assertEquals("We were discussing you, not me.?", list.get(3));
 	}
 
 	@After
@@ -106,7 +106,7 @@ public class ElizaServerTest {
         public void onOpen(Session session, EndpointConfig config) {
 
             // COMPLETE ME!!!
-        	session.getAsyncRemote().sendText("I think batman is the best Super-Hero.");
+        	session.getAsyncRemote().sendText("Do you like The Amazing Spiderman?");
             session.addMessageHandler(new ElizaMessageHandlerToComplete());
         }
 
