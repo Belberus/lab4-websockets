@@ -60,7 +60,7 @@ public class ElizaServerTest {
 		List<String> list = new ArrayList<>();
 		ClientEndpointConfig configuration = ClientEndpointConfig.Builder.create().build();
 		ClientManager client = ClientManager.createClient();
-		client.connectToServer(new ElizaEndpointToComplete(list), configuration, new URI("ws://localhost:8025/websockets/eliza"));
+		client.connectToServer(new ElizaEndpointToComplete(list, latch), configuration, new URI("ws://localhost:8025/websockets/eliza"));
 		// COMPLETE ME!!
 		latch.await();
 		// COMPLETE ME!!
