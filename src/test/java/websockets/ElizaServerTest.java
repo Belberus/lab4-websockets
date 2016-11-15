@@ -66,7 +66,7 @@ public class ElizaServerTest {
 		// COMPLETE ME!!
 		assertEquals(6,list.size());
 		// COMPLETE ME!!
-		assertEquals("Do you really think so?", list.get(5));
+		assertEquals("Do you really think so?", list.get(4));
 	}
 
 	@After
